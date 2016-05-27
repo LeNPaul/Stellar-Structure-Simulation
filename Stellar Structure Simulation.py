@@ -13,17 +13,17 @@ plist = []
 flist = []
 tlist = []
 
-dt = 0.01
+dt = 0.0001
 nsteps = 1000
 
-xlist = np.arange(0.0, 2.0, 0.01)
+xlist = np.arange(0.0, nsteps, 1)
 
 #for i in range(nsteps):
 #    xlist.append(i)
 
 #Guess a value of pc and an initial x value
 
-pc = 0.712
+pc = 0.712081
 x = 0.01
 
 #Equations for defining initial conditions
@@ -36,6 +36,11 @@ f = ((pc**2)*(x**3))/3
 
 t = 1 - ((pc**4)*(x**4))/6
 
+x = 0.08
+q = 0.06
+p = 80
+f = 9.3e-7
+t = 0.76
 
 #Transformed differential equations
 

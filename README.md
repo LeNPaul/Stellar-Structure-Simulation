@@ -1,4 +1,3 @@
-# Stellar-Structure-Simulation
-A simulation of the structure of stars using a method that Martin Schwarzschild first used
+# Data Analysis Projects
 
-This simulation requires pygame to run
+This repository is for data analysis projects

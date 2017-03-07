@@ -18,7 +18,7 @@ next(csv_f)
 x_data = []
 y_data = []
 point_size = 20
-x_value = 6
+x_value = 10
 y_value = 10
 
 weight_classes = [ '105+' , '105' , '94' , '85' , '77' , '69' , '62' , '56' ]
@@ -44,8 +44,9 @@ fourier = rfft(y_hist)/len(y_hist)
 
 fig, ax = plt.subplots(2, 1)
 ax[0].hist(data, bins=bin_size, color='dodgerblue', edgecolor='none', rwidth=0.9)
-ax[1].plot(x_hist, abs(fourier))
-
-print(y_hist)
+ax[0].set_title('')
+ax[0].set_xlabel('')
+ax[0].set_ylabel('')
+ax[1].plot(x_hist, abs(fourier), color='dodgerblue')
 
 plt.show()

@@ -3,22 +3,19 @@ import csv
 import matplotlib.lines as mlines
 import matplotlib.pyplot as plt
 
+#   http://exoplanetarchive.ipac.caltech.edu/cgi-bin/IcePlotter/nph-icePlotInit?mode=demo&set=confirmed
+
 f = open('open_exoplanet_catalogue_kepler.csv')
 csv_f = csv.reader(f)
 
 #Skip header
 next(csv_f)
 
-#weight: 2
-#snatch: 6
-#total: 11
-#clean & jerk: 10
-
 x_data = []
 y_data = []
 point_size = 10
-x_value = 3
-y_value = 20
+x_value = 4
+y_value = 3
 
 class_colours = ['slategrey', 'crimson', 'mediumseagreen', 'dodgerblue', 'salmon', 'darkorchid', 'sienna', 'orangered']
 

@@ -34,14 +34,10 @@ for row in csv_f:
 s_bin_size = np.arange(min(s_data), max(s_data) + binwidth, binwidth)
 cj_bin_size = np.arange(min(cj_data), max(cj_data) + binwidth, binwidth)
 
-'''
 fig, ax = plt.subplots(2, 1)
-ax[0].hist(s_data, bins=s_bin_size, color='dodgerblue', edgecolor='white')
+ax[0].hist(s_data, bins=s_bin_size-0.5, color='dodgerblue', edgecolor='white')
 ax[0].set_title('Snatch')
-ax[1].hist(cj_data, bins=cj_bin_size, color='dodgerblue', edgecolor='white')
+ax[1].hist(cj_data, bins=cj_bin_size-0.5, color='dodgerblue', edgecolor='white')
 ax[1].set_title('Clean & Jerk')
-'''
-
-plt.hist(s_data, bins=s_bin_size, color='dodgerblue', edgecolor='white')
 
 plt.show()

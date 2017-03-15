@@ -3,11 +3,14 @@ import csv
 import matplotlib.lines as mlines
 import matplotlib.pyplot as plt
 
-f = open('wl_data_male_2000-2016.csv')
-csv_f = csv.reader(f)
+f1 = open('wl_data_male_2000-2016.csv')
+csv_f1 = csv.reader(f1)
+f2 = open('wl_data_female_2000-2016.csv')
+csv_f2 = csv.reader(f2)
 
 #Skip header
-next(csv_f)
+next(csv_f1)
+next(csv_f2)
 
 #weight: 2
 #snatch: 6
@@ -22,7 +25,7 @@ y_value = 11
 weight_classes = [ '105+' , '105' , '94' , '85' , '77' , '69' , '62' , '56' ]
 class_colours = ['slategrey', 'crimson', 'mediumseagreen', 'dodgerblue', 'salmon', 'darkorchid', 'sienna', 'orangered']
 
-for row in csv_f:
+for row in csv_f1:
     x_data.append(float(row[x_value]))
     y_data.append(float(row[y_value]))
     if float(row[2]) >105:

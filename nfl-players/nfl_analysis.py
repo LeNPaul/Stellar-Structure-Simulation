@@ -4,6 +4,9 @@ import matplotlib.lines as mlines
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
 
+#   http://stackoverflow.com/questions/20105364/how-can-i-make-a-scatter-plot-colored-by-density-in-matplotlib
+#   http://stackoverflow.com/questions/24119920/how-to-plot-a-density-map-in-python
+
 f = open('nfl_data.csv')
 csv_f = csv.reader(f)
 
